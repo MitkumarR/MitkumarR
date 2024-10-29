@@ -23,7 +23,7 @@
 
 
 <h3 align="center">Stats</h3>
-<hr>
+<hr style="height: 3px;">
 <!-- Top Languages -->
 <p align="center">
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MitkumarR&theme=dark&hide_border=true&include_all_commits=false&count_private=false&layout=compact&bg_color=00000000" alt="Top Languages" height="150" />
