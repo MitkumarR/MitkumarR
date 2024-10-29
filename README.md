@@ -74,10 +74,10 @@
 <h3 align="center">Connect with me:</h3>
 
 <p align="center">
-<a href="https://linkedin.com/in/xyz" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="xyz" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/mit-rohit-8461b2287/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Linkedin" height="30" width="40" /></a>
 <!---<a href="https://stackoverflow.com/users/xyz" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="xyz" height="30" width="40" /></a>--->
 <!---<a href="https://kaggle.com/xyz" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="xyz" height="30" width="40" /></a>--->
-<a href="https://instagram.com/xyz" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="xyz" height="30" width="40" /></a>
+<a href="https://www.instagram.com/m_trht21/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="Instagram" height="30" width="40" /></a>
 <!---<a href="https://dribbble.com/xyz" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/dribbble.svg" alt="xyz" height="30" width="40" /></a>--->
 <!---<a href="https://www.behance.net/xyz" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg" alt="xyz" height="30" width="40" /></a>--->
 <!---<a href="https://medium.com/xyz" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="xyz" height="30" width="40" /></a>--->
