@@ -31,7 +31,7 @@
 </p>
 
 <p align="center">
-    <img src="https://github-profile-trophy.vercel.app/?username=mitkumarR&theme=radical&no-frame=true&no-bg=true&margin-w=4"/>
+    <img src="https://github-profile-trophy.vercel.app/?username=mitkumarR&theme=darkhub&no-frame=true&no-bg=true&margin-w=4"/>
 </p>
 <h3>Tech Stack</h3>
 
