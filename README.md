@@ -3,7 +3,7 @@
 
 <!--- <p align="left"> <a href="https://twitter.com/" target="blank"><img src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge" alt="" /></a> </p> --->
 
-- 🌱 I’m currently learning Machine Learning
+- 🧑‍🎓 Student at SVNIT, Surat
 
 <!--- - 👯 Im looking to collaborate on [xyz](xyz) --->
 
@@ -13,7 +13,7 @@
 
 <!--- - 📝 I regularly write articles on [xyz](xyz) --->
 
-- 💬 Ask me about Node.js, Express.js and Mongodb..
+<!--- - 💬 Ask me about Node.js, Express.js and Mongodb.. --->
 
 - 📫 How to reach me mitkumar1977@gmail.com
 
