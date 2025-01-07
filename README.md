@@ -10,7 +10,8 @@
 <!-- Stats Section -->
 <h3 align="center">📊 Stats</h3>
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MitkumarR&theme=dark&hide_border=true&include_all_commits=false&count_private=false&layout=compact&bg_color=00000000" alt="Top Languages" height="150" />
+<!--   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MitkumarR&theme=dark&hide_border=true&include_all_commits=false&count_private=false&layout=compact&bg_color=00000000" alt="Top Languages" height="150" /> -->
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MitkumarR&theme=dark&hide_border=true&layout=compact&bg_color=00000000&exclude_repo=big-js-repo" alt="Top Languages" height="150" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=MitkumarR&theme=dark&hide_border=true&background=00000000" alt="GitHub Streak" height="150"/>
   <img src="https://github-readme-stats.vercel.app/api?username=MitkumarR&theme=dark&hide_border=true&include_all_commits=false&count_private=false&bg_color=00000000" alt="GitHub Stats" height="150"/>
 </p>
