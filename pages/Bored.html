@@ -1,4 +1,74 @@
-<section class="page-content">
-    <h1 id="bored_title">Bored?</h1>
-    <p id="bored_desc">Here are some fun interactive things to do.</p>
-</section>
+<div class="page-content bored-page">
+    <!-- Hero -->
+    <section class="about-hero reveal">
+        <p class="hero-greeting">Feeling</p>
+        <h1>Bored?<span class="cursor">_</span></h1>
+        <p class="subtitle">Take a break. Pick a retro game and have some fun.</p>
+    </section>
+
+    <!-- Game Selector Grid -->
+    <section class="reveal" id="games-grid">
+        <h2 class="section-heading"><span class="heading-icon">⟩</span> Pick a Game</h2>
+        <div class="games-card-grid">
+            <div class="game-card" data-game="snake" id="card-snake">
+                <div class="game-card-icon">🐍</div>
+                <h3>Snake</h3>
+                <p>Eat. Grow. Don't crash.</p>
+            </div>
+            <div class="game-card" data-game="tictactoe" id="card-tictactoe">
+                <div class="game-card-icon">✕</div>
+                <h3>Tic-Tac-Toe</h3>
+                <p>Challenge the AI.</p>
+            </div>
+            <div class="game-card" data-game="typing" id="card-typing">
+                <div class="game-card-icon">⌨</div>
+                <h3>Typing Speed</h3>
+                <p>How fast can you type?</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= SNAKE ======= -->
+    <div class="game-container" id="game-snake" style="display:none;">
+        <button class="game-back-btn" data-back>← Back to Games</button>
+        <h2 class="game-title">🐍 Snake</h2>
+        <div class="game-score-bar">
+            <span>Score: <strong id="snake-score">0</strong></span>
+            <span>Best: <strong id="snake-best">0</strong></span>
+        </div>
+        <canvas id="snake-canvas" width="400" height="400"></canvas>
+        <p class="game-hint">Arrow keys to move · Space to start / restart</p>
+    </div>
+
+    <!-- ======= TIC-TAC-TOE ======= -->
+    <div class="game-container" id="game-tictactoe" style="display:none;">
+        <button class="game-back-btn" data-back>← Back to Games</button>
+        <h2 class="game-title">✕ Tic-Tac-Toe</h2>
+        <div class="game-status" id="ttt-status">Your turn (X)</div>
+        <div class="ttt-board" id="ttt-board"></div>
+        <button class="game-restart-btn" id="ttt-restart">Restart</button>
+    </div>
+
+    <!-- ======= TYPING SPEED ======= -->
+    <div class="game-container" id="game-typing" style="display:none;">
+        <button class="game-back-btn" data-back>← Back to Games</button>
+        <h2 class="game-title">⌨ Typing Speed Test</h2>
+        <div class="typing-stats">
+            <div class="typing-stat">
+                <span class="typing-stat-value" id="typing-time">0</span>
+                <span class="typing-stat-label">seconds</span>
+            </div>
+            <div class="typing-stat">
+                <span class="typing-stat-value" id="typing-wpm">0</span>
+                <span class="typing-stat-label">WPM</span>
+            </div>
+            <div class="typing-stat">
+                <span class="typing-stat-value" id="typing-accuracy">100</span>
+                <span class="typing-stat-label">% accuracy</span>
+            </div>
+        </div>
+        <div class="typing-text" id="typing-text"></div>
+        <input type="text" id="typing-input" class="typing-input" placeholder="Start typing here..." autocomplete="off" spellcheck="false">
+        <button class="game-restart-btn" id="typing-restart">New Test</button>
+    </div>
+</div>
