@@ -12,6 +12,11 @@ class AppLogic {
             // Set dynamic year in footer
             const yearSpan = document.getElementById('current-year');
             if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+            // Initialize global pixel effects (particles + trail)
+            if (window.PixelEffects) {
+                window.PixelEffects.initGlobal();
+            }
         });
     }
 
@@ -87,6 +92,27 @@ class AppLogic {
                 setTimeout(() => {
                     contentArea.innerHTML = html;
                     contentArea.style.opacity = '1';
+
+                    // Initialize scroll reveal animations
+                    const revealElements = document.querySelectorAll('.reveal');
+                    if (revealElements.length > 0) {
+                        const revealObserver = new IntersectionObserver((entries) => {
+                            entries.forEach((entry, index) => {
+                                if (entry.isIntersecting) {
+                                    entry.target.style.transitionDelay = `${index * 0.1}s`;
+                                    entry.target.classList.add('revealed');
+                                    revealObserver.unobserve(entry.target);
+                                }
+                            });
+                        }, { threshold: 0.1 });
+                        
+                        revealElements.forEach(el => revealObserver.observe(el));
+                    }
+
+                    // Initialize page-specific pixel doodles
+                    if (window.PixelEffects) {
+                        window.PixelEffects.initPage();
+                    }
                 }, 200);
             } else {
                 contentArea.innerHTML = '<div style="text-align: center; margin-top: 4rem;"><h2>404 - Page Not Found</h2></div>';
