@@ -1020,6 +1020,20 @@ footer {
     z-index: 1;
 }
 
+.game-card-icon.svg-icon {
+    width: 48px;
+    height: 48px;
+    background-color: var(--primary-color);
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    font-size: 0;
+    display: inline-block;
+}
+
 .game-card h3 {
     font-size: 1.2rem;
     color: var(--primary-color);

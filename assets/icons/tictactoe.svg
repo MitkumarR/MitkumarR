@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="black">
+  <!-- vertical lines -->
+  <rect x="5" y="1" width="2" height="14" />
+  <rect x="10" y="1" width="2" height="14" />
+  <!-- horizontal lines -->
+  <rect x="1" y="5" width="14" height="2" />
+  <rect x="1" y="10" width="14" height="2" />
+  <!-- X top left -->
+  <rect x="2" y="2" width="1" height="1" />
+  <rect x="4" y="2" width="1" height="1" />
+  <rect x="3" y="3" width="1" height="1" />
+  <rect x="2" y="4" width="1" height="1" />
+  <rect x="4" y="4" width="1" height="1" />
+  <!-- O bottom right -->
+  <rect x="13" y="12" width="2" height="1" />
+  <rect x="12" y="13" width="1" height="2" />
+  <rect x="15" y="13" width="1" height="2" />
+  <rect x="13" y="15" width="2" height="1" />
+</svg>

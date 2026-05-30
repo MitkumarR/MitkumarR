@@ -55,7 +55,6 @@
                 if (tool === 'hashchecker' && window.DevTools.initHashChecker) window.DevTools.initHashChecker();
                 if (tool === 'jwtdecoder' && window.DevTools.initJwtDecoder) window.DevTools.initJwtDecoder();
                 if (tool === 'base64' && window.DevTools.initBase64) window.DevTools.initBase64();
-                if (tool === 'asciiart' && window.DevTools.initAsciiArt) window.DevTools.initAsciiArt();
             });
         });
 

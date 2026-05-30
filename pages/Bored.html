@@ -11,27 +11,37 @@
         <h2 class="section-heading">Pick a Game</h2>
         <div class="games-card-grid">
             <div class="game-card" data-game="snake" id="card-snake">
-                <div class="game-card-icon">🐍</div>
+                <div class="game-card-icon svg-icon"
+                    style="-webkit-mask-image: url('assets/icons/snake.svg'); mask-image: url('assets/icons/snake.svg');">
+                </div>
                 <h3>Snake</h3>
                 <p>Eat. Grow. Don't crash.</p>
             </div>
             <div class="game-card" data-game="tictactoe" id="card-tictactoe">
-                <div class="game-card-icon">✕</div>
+                <div class="game-card-icon svg-icon"
+                    style="-webkit-mask-image: url('assets/icons/tictactoe.svg'); mask-image: url('assets/icons/tictactoe.svg');">
+                </div>
                 <h3>Tic-Tac-Toe</h3>
-                <p>Challenge the AI.</p>
+                <p>Challenge the Bot.</p>
             </div>
             <div class="game-card" data-game="typing" id="card-typing">
-                <div class="game-card-icon">⌨</div>
+                <div class="game-card-icon svg-icon"
+                    style="-webkit-mask-image: url('assets/icons/typing.svg'); mask-image: url('assets/icons/typing.svg');">
+                </div>
                 <h3>Typing Speed</h3>
                 <p>How fast can you type?</p>
             </div>
             <div class="game-card" data-game="2048" id="card-2048">
-                <div class="game-card-icon">2⁴</div>
+                <div class="game-card-icon svg-icon"
+                    style="-webkit-mask-image: url('assets/icons/2048.svg'); mask-image: url('assets/icons/2048.svg');">
+                </div>
                 <h3>2048</h3>
                 <p>Slide. Merge. Reach 2048.</p>
             </div>
             <div class="game-card" data-game="minesweeper" id="card-minesweeper">
-                <div class="game-card-icon">💣</div>
+                <div class="game-card-icon svg-icon"
+                    style="-webkit-mask-image: url('assets/icons/mine.svg'); mask-image: url('assets/icons/mine.svg');">
+                </div>
                 <h3>Minesweeper</h3>
                 <p>Clear the field. Don't explode.</p>
             </div>
@@ -41,7 +51,7 @@
     <!-- ======= SNAKE ======= -->
     <div class="game-container" id="game-snake" style="display:none;">
         <button class="game-back-btn" data-back>← Back to Games</button>
-        <h2 class="game-title">🐍 Snake</h2>
+        <h2 class="game-title">Snake</h2>
         <div class="game-score-bar">
             <span>Score: <strong id="snake-score">0</strong></span>
             <span>Best: <strong id="snake-best">0</strong></span>
@@ -53,7 +63,7 @@
     <!-- ======= TIC-TAC-TOE ======= -->
     <div class="game-container" id="game-tictactoe" style="display:none;">
         <button class="game-back-btn" data-back>← Back to Games</button>
-        <h2 class="game-title">✕ Tic-Tac-Toe</h2>
+        <h2 class="game-title">Tic-Tac-Toe</h2>
         <div class="game-status" id="ttt-status">Your turn (X)</div>
         <div class="ttt-board" id="ttt-board"></div>
         <button class="game-restart-btn" id="ttt-restart">Restart</button>
@@ -62,7 +72,7 @@
     <!-- ======= TYPING SPEED ======= -->
     <div class="game-container" id="game-typing" style="display:none;">
         <button class="game-back-btn" data-back>← Back to Games</button>
-        <h2 class="game-title">⌨ Typing Speed Test</h2>
+        <h2 class="game-title">Typing Speed Test</h2>
         <div class="typing-stats">
             <div class="typing-stat">
                 <span class="typing-stat-value" id="typing-time">0</span>
@@ -100,7 +110,7 @@
     <!-- ======= MINESWEEPER ======= -->
     <div class="game-container" id="game-minesweeper" style="display:none;">
         <button class="game-back-btn" data-back>← Back to Games</button>
-        <h2 class="game-title">💣 Minesweeper</h2>
+        <h2 class="game-title">Minesweeper</h2>
         <div class="game-score-bar">
             <span>Mines: <strong id="mine-count">10</strong></span>
         </div>

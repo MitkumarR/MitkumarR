@@ -123,40 +123,47 @@
         <!-- Tools Section -->
         <section class="reveal" id="tools-section">
             <h2 class="section-heading">Developer Tools</h2>
-            <p class="subtitle" style="margin-bottom: 2rem;">Interactive utilities I built — try them out right here.</p>
+            <p class="subtitle" style="margin-bottom: 2rem;">Interactive utilities I built — try them out right here.
+            </p>
 
             <div id="tools-grid">
                 <div class="games-card-grid tools-card-grid">
                     <div class="game-card tool-card" data-tool="pswdstrength">
-                        <div class="game-card-icon">🔒</div>
+                        <div class="game-card-icon svg-icon"
+                            style="-webkit-mask-image: url('assets/icons/analyzer.svg'); mask-image: url('assets/icons/analyzer.svg');">
+                        </div>
                         <h3>Password Analyzer</h3>
                         <p>Check your password strength</p>
                     </div>
                     <div class="game-card tool-card" data-tool="pswdgenerator">
-                        <div class="game-card-icon">🔑</div>
+                        <div class="game-card-icon svg-icon"
+                            style="-webkit-mask-image: url('assets/icons/key.svg'); mask-image: url('assets/icons/key.svg');">
+                        </div>
                         <h3>Password Generator</h3>
                         <p>Generate secure passwords</p>
                     </div>
                     <div class="game-card tool-card" data-tool="hashchecker">
-                        <div class="game-card-icon">#️⃣</div>
+                        <div class="game-card-icon svg-icon"
+                            style="-webkit-mask-image: url('assets/icons/hash.svg'); mask-image: url('assets/icons/hash.svg');">
+                        </div>
                         <h3>Hash Checker</h3>
                         <p>SHA-1 / SHA-256 / SHA-512</p>
                     </div>
                     <div class="game-card tool-card" data-tool="jwtdecoder">
-                        <div class="game-card-icon">🪙</div>
+                        <div class="game-card-icon svg-icon"
+                            style="-webkit-mask-image: url('assets/icons/token.svg'); mask-image: url('assets/icons/token.svg');">
+                        </div>
                         <h3>JWT Decoder</h3>
                         <p>Decode JSON Web Tokens</p>
                     </div>
                     <div class="game-card tool-card" data-tool="base64">
-                        <div class="game-card-icon">⇄</div>
+                        <div class="game-card-icon svg-icon"
+                            style="-webkit-mask-image: url('assets/icons/swap.svg'); mask-image: url('assets/icons/swap.svg');">
+                        </div>
                         <h3>Base64 Enc/Dec</h3>
                         <p>Encode & decode Base64</p>
                     </div>
-                    <div class="game-card tool-card" data-tool="asciiart">
-                        <div class="game-card-icon">█▀█</div>
-                        <h3>ASCII Art</h3>
-                        <p>Generate pixel text art</p>
-                    </div>
+
                 </div>
             </div>
         </section>
@@ -167,8 +174,9 @@
     <!-- PASSWORD STRENGTH -->
     <div class="tool-container" id="tool-pswdstrength" style="display:none;">
         <button class="game-back-btn tool-back-btn">← Back to Tools</button>
-        <h2 class="game-title">🔒 Password Strength Analyzer</h2>
-        <input type="text" id="pswd-str-input" class="tool-input" placeholder="Enter a password to analyze..." autocomplete="off">
+        <h2 class="game-title">Password Strength Analyzer</h2>
+        <input type="text" id="pswd-str-input" class="tool-input" placeholder="Enter a password to analyze..."
+            autocomplete="off">
         <div class="pswd-bar-track">
             <div class="pswd-bar-fill" id="pswd-str-bar"></div>
         </div>
@@ -179,7 +187,7 @@
     <!-- PASSWORD GENERATOR -->
     <div class="tool-container" id="tool-pswdgenerator" style="display:none;">
         <button class="game-back-btn tool-back-btn">← Back to Tools</button>
-        <h2 class="game-title">🔑 Password Generator</h2>
+        <h2 class="game-title">Password Generator</h2>
         <div class="pswdgen-output" id="pswdgen-output"></div>
         <div class="tool-row">
             <label>Length: <strong id="pswdgen-length-val">16</strong></label>
@@ -200,7 +208,7 @@
     <!-- HASH CHECKER -->
     <div class="tool-container" id="tool-hashchecker" style="display:none;">
         <button class="game-back-btn tool-back-btn">← Back to Tools</button>
-        <h2 class="game-title">#️⃣ Hash Checker</h2>
+        <h2 class="game-title">Hash Checker</h2>
         <textarea id="hash-input" class="tool-textarea" placeholder="Enter text to hash..." rows="3"></textarea>
         <div class="tool-row">
             <label>Algorithm:</label>
@@ -219,7 +227,7 @@
     <!-- JWT DECODER -->
     <div class="tool-container" id="tool-jwtdecoder" style="display:none;">
         <button class="game-back-btn tool-back-btn">← Back to Tools</button>
-        <h2 class="game-title">🪙 JWT Decoder</h2>
+        <h2 class="game-title">Jwt Decoder</h2>
         <textarea id="jwt-input" class="tool-textarea" placeholder="Paste your JWT token here..." rows="3"></textarea>
         <div class="jwt-error" id="jwt-error"></div>
         <div class="jwt-sections">
@@ -237,7 +245,7 @@
     <!-- BASE64 -->
     <div class="tool-container" id="tool-base64" style="display:none;">
         <button class="game-back-btn tool-back-btn">← Back to Tools</button>
-        <h2 class="game-title">⇄ Base64 Encoder / Decoder</h2>
+        <h2 class="game-title">Base64 Encoder / Decoder</h2>
         <textarea id="b64-input" class="tool-textarea" placeholder="Enter text or Base64..." rows="4"></textarea>
         <div class="tool-btn-row">
             <button class="game-restart-btn" id="b64-encode">Encode</button>
@@ -251,12 +259,5 @@
         <div class="b64-error" id="b64-error"></div>
     </div>
 
-    <!-- ASCII ART -->
-    <div class="tool-container" id="tool-asciiart" style="display:none;">
-        <button class="game-back-btn tool-back-btn">← Back to Tools</button>
-        <h2 class="game-title">█▀█ ASCII Art Generator</h2>
-        <input type="text" id="ascii-input" class="tool-input" placeholder="Type something..." value="MIT" maxlength="12">
-        <pre class="ascii-output" id="ascii-output"></pre>
-        <button class="game-back-btn" id="ascii-copy">Copy</button>
-    </div>
+
 </div>
