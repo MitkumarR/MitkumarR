@@ -59,7 +59,18 @@ class AppLogic {
             'mywork': { file: 'MyWork.html', color: '#A0F200' }
         };
 
-        const currentRoute = routes[hash] || routes['aboutme'];
+        // Check if route exists, if not fall back to notfound
+        let currentRoute;
+        if (routes[hash]) {
+            currentRoute = routes[hash];
+        } else {
+            currentRoute = { file: 'notfound.html', color: '#FEFEFF' }; // White theme for notfound
+        }
+
+        const loader = document.getElementById('loader-overlay');
+        let loaderTimeout = setTimeout(() => {
+            if (loader) loader.classList.add('show');
+        }, 100); // Show loader only if it takes more than 100ms
 
         try {
             const contentArea = document.getElementById('content-area');
@@ -67,6 +78,14 @@ class AppLogic {
 
             // Fade out
             contentArea.style.opacity = '0';
+
+            // Toggle header and footer visibility for notfound
+            const headerElement = document.querySelector('header');
+            const footerElement = document.querySelector('footer');
+            const isNotFound = currentRoute.file === 'notfound.html';
+            
+            if (headerElement) headerElement.style.display = isNotFound ? 'none' : '';
+            if (footerElement) footerElement.style.display = isNotFound ? 'none' : '';
 
             // Update Theme Color dynamically
             document.documentElement.style.setProperty('--primary-color', currentRoute.color);
@@ -86,6 +105,13 @@ class AppLogic {
             }
 
             const response = await fetch(`./pages/${currentRoute.file}`);
+            clearTimeout(loaderTimeout);
+
+            // Artificial delay to make sure loader can fade out smoothly
+            setTimeout(() => {
+                if (loader) loader.classList.remove('show');
+            }, 150);
+
             if (response.ok) {
                 const html = await response.text();
                 // Wait for fade out, then inject HTML and fade in
@@ -105,7 +131,7 @@ class AppLogic {
                                 }
                             });
                         }, { threshold: 0.1 });
-                        
+
                         revealElements.forEach(el => revealObserver.observe(el));
                     }
 
@@ -125,10 +151,20 @@ class AppLogic {
                     }
                 }, 200);
             } else {
-                contentArea.innerHTML = '<div style="text-align: center; margin-top: 4rem;"><h2>404 - Page Not Found</h2></div>';
-                contentArea.style.opacity = '1';
+                // If fetch fails, show notfound page
+                const notfoundResponse = await fetch('./pages/notfound.html');
+                const html = notfoundResponse.ok ? await notfoundResponse.text() : '<div style="text-align: center; margin-top: 4rem;"><h2>404 - Page Not Found</h2></div>';
+                setTimeout(() => {
+                    contentArea.innerHTML = html;
+                    contentArea.style.opacity = '1';
+                    if (window.PixelEffects) {
+                        window.PixelEffects.initPage();
+                    }
+                }, 200);
             }
         } catch (error) {
+            clearTimeout(loaderTimeout);
+            if (loader) loader.classList.remove('show');
             console.error('Error loading page:', error);
         }
     }

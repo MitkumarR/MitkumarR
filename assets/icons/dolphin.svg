@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 16" fill="black">
+  <!-- Dorsal fin -->
+  <rect x="11" y="2" width="2" height="2" />
+  <rect x="12" y="1" width="2" height="1" />
+  
+  <!-- Head & Body curve -->
+  <rect x="5" y="4" width="2" height="2" />
+  <rect x="7" y="3" width="6" height="3" />
+  <rect x="13" y="4" width="4" height="3" />
+  <rect x="17" y="5" width="3" height="2" />
+  <rect x="20" y="7" width="2" height="2" />
+  
+  <!-- Nose -->
+  <rect x="3" y="5" width="2" height="1" />
+  
+  <!-- Underbelly -->
+  <rect x="6" y="6" width="8" height="2" />
+  <rect x="14" y="7" width="4" height="1" />
+  
+  <!-- Eye -->
+  <rect x="6" y="4" width="1" height="1" fill="white" />
+  
+  <!-- Flipper -->
+  <rect x="9" y="8" width="2" height="2" />
+  <rect x="10" y="10" width="1" height="1" />
+  
+  <!-- Tail -->
+  <rect x="22" y="8" width="2" height="2" />
+  <rect x="23" y="6" width="1" height="2" />
+  <rect x="23" y="10" width="1" height="2" />
+</svg>
