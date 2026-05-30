@@ -118,6 +118,11 @@ class AppLogic {
                     if (window.BoredGames) {
                         window.BoredGames.init();
                     }
+
+                    // Initialize tools on MyWork page
+                    if (window.DevTools) {
+                        window.DevTools.init();
+                    }
                 }, 200);
             } else {
                 contentArea.innerHTML = '<div style="text-align: center; margin-top: 4rem;"><h2>404 - Page Not Found</h2></div>';

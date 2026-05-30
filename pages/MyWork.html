@@ -1,4 +1,262 @@
-<section class="page-content">
-    <h1 id="work_title">My Work</h1>
-    <p id="work_desc">Showcase your amazing projects here.</p>
-</section>
+<div class="page-content">
+    <!-- Hero Section -->
+    <section class="about-hero reveal">
+        <p class="hero-greeting">portfolio</p>
+        <h1>My Work<span class="cursor">_</span></h1>
+        <p class="subtitle">Projects, experiments, and systems I've built while learning software engineering.</p>
+    </section>
+
+    <div class="about-grid">
+
+        <!-- Project 1: E2EE Secure File Share -->
+        <section class="project-card reveal">
+            <div class="project-header">
+                <div class="project-title-group">
+                    <h2 class="project-title">E2EE Secure File Share</h2>
+                    <p class="project-subtitle">Zero-knowledge encrypted file sharing platform</p>
+                </div>
+                <a href="https://github.com/MitkumarR/e2ee_share" target="_blank" rel="noopener noreferrer"
+                    class="project-link" title="View on GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="project-tech-stack">
+                <span class="project-tech-tag">Flask</span>
+                <span class="project-tech-tag">React</span>
+                <span class="project-tech-tag">Docker</span>
+                <span class="project-tech-tag">Redis</span>
+                <span class="project-tech-tag">PostgreSQL</span>
+                <span class="project-tech-tag">NGINX</span>
+                <span class="project-tech-tag">OpenStack Swift</span>
+            </div>
+
+            <div class="project-features">
+                <div class="project-feature-item">
+                    <span class="feature-marker">▹</span>
+                    <span>End-to-End Encryption</span>
+                </div>
+                <div class="project-feature-item">
+                    <span class="feature-marker">▹</span>
+                    <span>Secure Authentication</span>
+                </div>
+                <div class="project-feature-item">
+                    <span class="feature-marker">▹</span>
+                    <span>One-Time Download Links</span>
+                </div>
+                <div class="project-feature-item">
+                    <span class="feature-marker">▹</span>
+                    <span>Microservices Architecture</span>
+                </div>
+                <div class="project-feature-item">
+                    <span class="feature-marker">▹</span>
+                    <span>Private Encrypted Cloud</span>
+                </div>
+            </div>
+
+            <ul class="project-details">
+                <li>Engineered a zero-knowledge E2EE pipeline using the browser's Web Crypto API (AES-256-GCM), ensuring
+                    servers never accessed unencrypted data.</li>
+            </ul>
+        </section>
+
+        <!-- Project 2: Distributed Rate Limiter -->
+        <section class="project-card reveal">
+            <div class="project-header">
+                <div class="project-title-group">
+                    <h2 class="project-title">Distributed Rate Limiter</h2>
+                    <p class="project-subtitle">Scalable API traffic control across replicated instances</p>
+                </div>
+                <a href="https://github.com/MitkumarR/dstrtlmt" target="_blank" rel="noopener noreferrer"
+                    class="project-link" title="View on GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="project-tech-stack">
+                <span class="project-tech-tag">FastAPI</span>
+                <span class="project-tech-tag">Redis</span>
+                <span class="project-tech-tag">Docker</span>
+                <span class="project-tech-tag">Prometheus</span>
+                <span class="project-tech-tag">Grafana</span>
+            </div>
+
+            <div class="project-features">
+                <div class="project-feature-item">
+                    <span class="feature-marker">▹</span>
+                    <span>Distributed Rate Limiting</span>
+                </div>
+                <div class="project-feature-item">
+                    <span class="feature-marker">▹</span>
+                    <span>Redis Shared State</span>
+                </div>
+                <div class="project-feature-item">
+                    <span class="feature-marker">▹</span>
+                    <span>Real-time Monitoring</span>
+                </div>
+                <div class="project-feature-item">
+                    <span class="feature-marker">▹</span>
+                    <span>Dockerized Microservices</span>
+                </div>
+                <div class="project-feature-item">
+                    <span class="feature-marker">▹</span>
+                    <span>API Traffic Analytics</span>
+                </div>
+            </div>
+
+            <ul class="project-details">
+                <li>Built a distributed rate limiter using FastAPI and Redis to enforce request limits across multiple
+                    API instances.</li>
+            </ul>
+        </section>
+
+        <!-- Tools Section -->
+        <section class="reveal" id="tools-section">
+            <h2 class="section-heading">Developer Tools</h2>
+            <p class="subtitle" style="margin-bottom: 2rem;">Interactive utilities I built — try them out right here.</p>
+
+            <div id="tools-grid">
+                <div class="games-card-grid tools-card-grid">
+                    <div class="game-card tool-card" data-tool="pswdstrength">
+                        <div class="game-card-icon">🔒</div>
+                        <h3>Password Analyzer</h3>
+                        <p>Check your password strength</p>
+                    </div>
+                    <div class="game-card tool-card" data-tool="pswdgenerator">
+                        <div class="game-card-icon">🔑</div>
+                        <h3>Password Generator</h3>
+                        <p>Generate secure passwords</p>
+                    </div>
+                    <div class="game-card tool-card" data-tool="hashchecker">
+                        <div class="game-card-icon">#️⃣</div>
+                        <h3>Hash Checker</h3>
+                        <p>SHA-1 / SHA-256 / SHA-512</p>
+                    </div>
+                    <div class="game-card tool-card" data-tool="jwtdecoder">
+                        <div class="game-card-icon">🪙</div>
+                        <h3>JWT Decoder</h3>
+                        <p>Decode JSON Web Tokens</p>
+                    </div>
+                    <div class="game-card tool-card" data-tool="base64">
+                        <div class="game-card-icon">⇄</div>
+                        <h3>Base64 Enc/Dec</h3>
+                        <p>Encode & decode Base64</p>
+                    </div>
+                    <div class="game-card tool-card" data-tool="asciiart">
+                        <div class="game-card-icon">█▀█</div>
+                        <h3>ASCII Art</h3>
+                        <p>Generate pixel text art</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ======= TOOL CONTAINERS (outside about-grid for proper display) ======= -->
+
+    <!-- PASSWORD STRENGTH -->
+    <div class="tool-container" id="tool-pswdstrength" style="display:none;">
+        <button class="game-back-btn tool-back-btn">← Back to Tools</button>
+        <h2 class="game-title">🔒 Password Strength Analyzer</h2>
+        <input type="text" id="pswd-str-input" class="tool-input" placeholder="Enter a password to analyze..." autocomplete="off">
+        <div class="pswd-bar-track">
+            <div class="pswd-bar-fill" id="pswd-str-bar"></div>
+        </div>
+        <div class="pswd-str-label" id="pswd-str-label">Enter a password</div>
+        <div class="pswd-str-details" id="pswd-str-details"></div>
+    </div>
+
+    <!-- PASSWORD GENERATOR -->
+    <div class="tool-container" id="tool-pswdgenerator" style="display:none;">
+        <button class="game-back-btn tool-back-btn">← Back to Tools</button>
+        <h2 class="game-title">🔑 Password Generator</h2>
+        <div class="pswdgen-output" id="pswdgen-output"></div>
+        <div class="tool-row">
+            <label>Length: <strong id="pswdgen-length-val">16</strong></label>
+            <input type="range" id="pswdgen-length" min="8" max="64" value="16" class="tool-slider">
+        </div>
+        <div class="tool-checkboxes">
+            <label><input type="checkbox" id="pswdgen-upper" checked> Uppercase</label>
+            <label><input type="checkbox" id="pswdgen-lower" checked> Lowercase</label>
+            <label><input type="checkbox" id="pswdgen-numbers" checked> Numbers</label>
+            <label><input type="checkbox" id="pswdgen-symbols" checked> Symbols</label>
+        </div>
+        <div class="tool-btn-row">
+            <button class="game-restart-btn" id="pswdgen-generate">Generate</button>
+            <button class="game-back-btn" id="pswdgen-copy">Copy</button>
+        </div>
+    </div>
+
+    <!-- HASH CHECKER -->
+    <div class="tool-container" id="tool-hashchecker" style="display:none;">
+        <button class="game-back-btn tool-back-btn">← Back to Tools</button>
+        <h2 class="game-title">#️⃣ Hash Checker</h2>
+        <textarea id="hash-input" class="tool-textarea" placeholder="Enter text to hash..." rows="3"></textarea>
+        <div class="tool-row">
+            <label>Algorithm:</label>
+            <select id="hash-algo" class="tool-select">
+                <option value="SHA-1">SHA-1</option>
+                <option value="SHA-256" selected>SHA-256</option>
+                <option value="SHA-384">SHA-384</option>
+                <option value="SHA-512">SHA-512</option>
+            </select>
+        </div>
+        <div class="tool-output-box" id="hash-output"></div>
+        <input type="text" id="hash-compare" class="tool-input" placeholder="Paste a hash to compare...">
+        <div class="hash-match" id="hash-match"></div>
+    </div>
+
+    <!-- JWT DECODER -->
+    <div class="tool-container" id="tool-jwtdecoder" style="display:none;">
+        <button class="game-back-btn tool-back-btn">← Back to Tools</button>
+        <h2 class="game-title">🪙 JWT Decoder</h2>
+        <textarea id="jwt-input" class="tool-textarea" placeholder="Paste your JWT token here..." rows="3"></textarea>
+        <div class="jwt-error" id="jwt-error"></div>
+        <div class="jwt-sections">
+            <div class="jwt-section">
+                <h3>Header</h3>
+                <pre class="tool-output-box" id="jwt-header"></pre>
+            </div>
+            <div class="jwt-section">
+                <h3>Payload</h3>
+                <pre class="tool-output-box" id="jwt-payload"></pre>
+            </div>
+        </div>
+    </div>
+
+    <!-- BASE64 -->
+    <div class="tool-container" id="tool-base64" style="display:none;">
+        <button class="game-back-btn tool-back-btn">← Back to Tools</button>
+        <h2 class="game-title">⇄ Base64 Encoder / Decoder</h2>
+        <textarea id="b64-input" class="tool-textarea" placeholder="Enter text or Base64..." rows="4"></textarea>
+        <div class="tool-btn-row">
+            <button class="game-restart-btn" id="b64-encode">Encode</button>
+            <button class="game-restart-btn" id="b64-decode">Decode</button>
+            <button class="game-back-btn" id="b64-swap">⇄ Swap</button>
+        </div>
+        <textarea id="b64-output" class="tool-textarea" placeholder="Output..." rows="4" readonly></textarea>
+        <div class="tool-btn-row">
+            <button class="game-back-btn" id="b64-copy">Copy Output</button>
+        </div>
+        <div class="b64-error" id="b64-error"></div>
+    </div>
+
+    <!-- ASCII ART -->
+    <div class="tool-container" id="tool-asciiart" style="display:none;">
+        <button class="game-back-btn tool-back-btn">← Back to Tools</button>
+        <h2 class="game-title">█▀█ ASCII Art Generator</h2>
+        <input type="text" id="ascii-input" class="tool-input" placeholder="Type something..." value="MIT" maxlength="12">
+        <pre class="ascii-output" id="ascii-output"></pre>
+        <button class="game-back-btn" id="ascii-copy">Copy</button>
+    </div>
+</div>

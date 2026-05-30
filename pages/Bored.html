@@ -8,7 +8,7 @@
 
     <!-- Game Selector Grid -->
     <section class="reveal" id="games-grid">
-        <h2 class="section-heading"><span class="heading-icon">⟩</span> Pick a Game</h2>
+        <h2 class="section-heading">Pick a Game</h2>
         <div class="games-card-grid">
             <div class="game-card" data-game="snake" id="card-snake">
                 <div class="game-card-icon">🐍</div>
@@ -24,6 +24,16 @@
                 <div class="game-card-icon">⌨</div>
                 <h3>Typing Speed</h3>
                 <p>How fast can you type?</p>
+            </div>
+            <div class="game-card" data-game="2048" id="card-2048">
+                <div class="game-card-icon">2⁴</div>
+                <h3>2048</h3>
+                <p>Slide. Merge. Reach 2048.</p>
+            </div>
+            <div class="game-card" data-game="minesweeper" id="card-minesweeper">
+                <div class="game-card-icon">💣</div>
+                <h3>Minesweeper</h3>
+                <p>Clear the field. Don't explode.</p>
             </div>
         </div>
     </section>
@@ -68,7 +78,34 @@
             </div>
         </div>
         <div class="typing-text" id="typing-text"></div>
-        <input type="text" id="typing-input" class="typing-input" placeholder="Start typing here..." autocomplete="off" spellcheck="false">
+        <input type="text" id="typing-input" class="typing-input" placeholder="Start typing here..." autocomplete="off"
+            spellcheck="false">
         <button class="game-restart-btn" id="typing-restart">New Test</button>
+    </div>
+
+    <!-- ======= 2048 ======= -->
+    <div class="game-container" id="game-2048" style="display:none;">
+        <button class="game-back-btn" data-back>← Back to Games</button>
+        <h2 class="game-title">2048</h2>
+        <div class="game-score-bar">
+            <span>Score: <strong id="g2048-score">0</strong></span>
+            <span>Best: <strong id="g2048-best">0</strong></span>
+        </div>
+        <div class="g2048-status" id="g2048-status"></div>
+        <div class="g2048-board" id="g2048-board"></div>
+        <p class="game-hint">Arrow keys to slide tiles</p>
+        <button class="game-restart-btn" id="g2048-restart">New Game</button>
+    </div>
+
+    <!-- ======= MINESWEEPER ======= -->
+    <div class="game-container" id="game-minesweeper" style="display:none;">
+        <button class="game-back-btn" data-back>← Back to Games</button>
+        <h2 class="game-title">💣 Minesweeper</h2>
+        <div class="game-score-bar">
+            <span>Mines: <strong id="mine-count">10</strong></span>
+        </div>
+        <div class="mine-status" id="mine-status">Click to start. Right-click to flag.</div>
+        <div class="mine-board" id="mine-board"></div>
+        <button class="game-restart-btn" id="mine-restart">New Game</button>
     </div>
 </div>

@@ -43,6 +43,8 @@
                 if (game === 'snake' && window.BoredGames.initSnake) window.BoredGames.initSnake();
                 if (game === 'tictactoe' && window.BoredGames.initTicTacToe) window.BoredGames.initTicTacToe();
                 if (game === 'typing' && window.BoredGames.initTypingTest) window.BoredGames.initTypingTest();
+                if (game === '2048' && window.BoredGames.init2048) window.BoredGames.init2048();
+                if (game === 'minesweeper' && window.BoredGames.initMinesweeper) window.BoredGames.initMinesweeper();
             });
         });
 
@@ -52,6 +54,14 @@
                 if (window.BoredGames.snakeCleanup) { 
                     window.BoredGames.snakeCleanup(); 
                     window.BoredGames.snakeCleanup = null; 
+                }
+                if (window.BoredGames.g2048Cleanup) {
+                    window.BoredGames.g2048Cleanup();
+                    window.BoredGames.g2048Cleanup = null;
+                }
+                if (window.BoredGames.mineCleanup) {
+                    window.BoredGames.mineCleanup();
+                    window.BoredGames.mineCleanup = null;
                 }
                 window.BoredGames.utils.showGrid();
             });
